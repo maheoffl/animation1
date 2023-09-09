@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 55%;
+  height: 80%;
+  /* background-color: blue; */
+  position: relative;
+}
+.page {
+  position: absolute;
+  /* width: 100%; */
+  height: 100%;
+  background-color: rgb(83, 0, 0);
+  /* position: relative; */
+  animation: slide 2s ease-out infinite;
+}
+
+.page img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
